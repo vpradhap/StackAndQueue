@@ -5,6 +5,7 @@ int flag = 0;
 while (flag == 0)
 {
     Stacks stacks = new Stacks();
+    Queues queues = new Queues();
     Console.WriteLine("\n1 - Creating stack using linked list");
     Console.WriteLine("2 - Peek and pop operations on stack");
 
@@ -34,7 +35,13 @@ while (flag == 0)
             stacks.Pop();
             stacks.Display();
             break;
-        default :
+        case 3:
+            queues.Enqueue(56);
+            queues.Enqueue(30);
+            queues.Enqueue(70);
+            queues.Display();
+            break;
+        default:
             flag = 1;
             Console.WriteLine("Enter valid number");
             break;
