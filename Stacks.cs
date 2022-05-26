@@ -31,11 +31,32 @@ namespace StacksAndQueues
             Console.WriteLine(newNode.data + " is inserted into the stack");
         }
 
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("\nCan't peek on a empty stack");
+                return;
+            }
+            Console.WriteLine(top.data+" is at the top of the stack --> peek operation ");
+        }
+
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("\nCan't pop on a empty stack");
+                return;
+            }
+            Console.WriteLine("\n"+top.data + " is deleted from the stack --> pop operation ");
+            top = top.next;
+        }
+
         public void Display()
         {
             if (top == null)
             {
-                Console.WriteLine("Stack is empty");
+                Console.WriteLine("\nStack is empty");
                 return;
             }
             Console.WriteLine("\nStack Layout \n");
