@@ -8,6 +8,7 @@ while (flag == 0)
     Queues queues = new Queues();
     Console.WriteLine("\n1 - Creating stack using linked list");
     Console.WriteLine("2 - Peek and pop operations on stack");
+    Console.WriteLine("3 - Creating Queue using linked list");
 
     Console.Write("\nYour Pick : ");
     int pick = Convert.ToInt32(Console.ReadLine());
