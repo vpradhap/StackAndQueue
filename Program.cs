@@ -9,6 +9,7 @@ while (flag == 0)
     Console.WriteLine("\n1 - Creating stack using linked list");
     Console.WriteLine("2 - Peek and pop operations on stack");
     Console.WriteLine("3 - Creating Queue using linked list");
+    Console.WriteLine("4 - Dequeue operation on queue");
 
     Console.Write("\nYour Pick : ");
     int pick = Convert.ToInt32(Console.ReadLine());
@@ -41,6 +42,18 @@ while (flag == 0)
             queues.Enqueue(30);
             queues.Enqueue(70);
             queues.Display();
+            break;
+        case 4:
+            queues.Enqueue(56);
+            queues.Enqueue(30);
+            queues.Enqueue(70);
+            queues.Display();
+            queues.Dequeue();
+            queues.Display();
+            queues.Dequeue();
+            queues.Display();
+            queues.Dequeue();
+            queues.Display(); 
             break;
         default:
             flag = 1;

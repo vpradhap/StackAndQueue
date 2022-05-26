@@ -34,6 +34,19 @@ namespace StacksAndQueues
             }
             Console.WriteLine(newNode.data + " is inserted into the queue");
         }
+        public void Dequeue()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("\nCan't dequeue on a empty queue");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("\n" + top.data + " is deleted from the queue --> dequeue operation");
+                top = top.next;
+            }
+        }
 
         public void Display()
         {
